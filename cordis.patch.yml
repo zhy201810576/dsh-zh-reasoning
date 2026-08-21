@@ -1,0 +1,6 @@
+# dsh-zh-reasoning bundle patch: 让 DSH 的 reasoning 与最终回答默认使用简体中文。
+# 通过 insert 在 profile 中挂载插件行。profile 自身的 cordis.patch.yml
+# 可在本行之后按 id 覆盖其 config。
+- insert:
+    - id: dsh-zh
+      name: dsh-zh-reasoning

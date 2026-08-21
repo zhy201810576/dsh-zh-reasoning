@@ -1,0 +1,41 @@
+{
+  "name": "dsh-zh-reasoning",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "DeepSeek Harness 插件：让模型的思考（reasoning）与最终回答默认使用简体中文。A Chinese-first plugin that makes DeepSeek Harness reason and answer in Simplified Chinese by default.",
+  "license": "Apache-2.0",
+  "exports": "./lib/index.js",
+  "main": "./lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "chinese",
+    "zh-cn",
+    "reasoning",
+    "i18n",
+    "locale"
+  ],
+  "dependencies": {
+    "@deepseek-ai/dsh-llm": "0.0.1-rc.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-llm": {
+      "optional": true
+    }
+  }
+}

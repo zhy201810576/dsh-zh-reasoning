@@ -1,0 +1,26 @@
+# 依赖
+node_modules/
+
+# 构建产物与打包
+dist/
+coverage/
+*.tgz
+*.tsbuildinfo
+
+# 日志
+*.log
+pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 环境与密钥
+.env
+.env.*
+!.env.example
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
