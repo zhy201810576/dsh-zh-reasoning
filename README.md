@@ -1,5 +1,6 @@
 # dsh-zh-reasoning
 
+[![npm version](https://img.shields.io/npm/v/dsh-zh-reasoning.svg)](https://www.npmjs.com/package/dsh-zh-reasoning)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/zhy201810576/dsh-zh-reasoning?style=social)](https://github.com/zhy201810576/dsh-zh-reasoning)
 
@@ -24,7 +25,7 @@
 
 ## 安装 / 挂载
 
-**方式一：npm 发布后（推荐）**
+**方式一：npm 安装（推荐）**
 
 ```sh
 dsh plugin --profile <name> add dsh-zh-reasoning
