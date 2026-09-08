@@ -23,6 +23,16 @@
 
 > 说明：harness 与 DeepSeek API 没有强制推理语言的开关；全中文提示词能最大化概率，但不保证 100%。
 
+## 兼容性
+
+| 本插件版本 | 依赖的 DSH 运行时 | `@deepseek-ai/dsh-llm` |
+| --- | --- | --- |
+| `1.0.0` | `0.0.1-rc.x`（旧版） | `0.0.1-rc.1` |
+| `1.1.0` | `0.1.2-rc.x`（新版） | `^0.1.2-rc.1` |
+
+`1.1.0` 起适配新版 DSH：`agent/pre-step` 处理器改为展开 `decision` 再追加消息，
+保留 `startsRequestSeries` 等下游字段，避免与 goal-round-driver / cordis 工具等插件冲突。
+
 ## 安装 / 挂载
 
 **方式一：npm 安装（推荐）**
